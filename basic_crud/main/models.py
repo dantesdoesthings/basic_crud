@@ -9,6 +9,6 @@ class Gun(models.Model):
     calibre = models.CharField(max_length=10)
     manufacturer = models.CharField(max_length=50)
     type = models.CharField(max_length=20)
-    magazine_capacity = models.IntegerField()
+    magazine_capacity = models.IntegerField(null=True)
     first_manufactured = models.DateField(null=True)
 
